@@ -1,0 +1,340 @@
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ /* Shared Styles Goes Here */
+ * {
+     font-family: 'Work Sans', sans-serif;
+ }
+
+ .container {
+     padding: 30px 100px;
+ }
+
+
+ /* Navbar Style Goes Here */
+ nav {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 100px;
+     background: #FFF;
+     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+ }
+
+ nav .nav-left {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+ }
+
+ nav .nav-left img {
+     width: 100%;
+ }
+
+ nav .nav-left h2 {
+     color: #0B0223;
+     text-align: center;
+     font-size: 45px;
+     font-weight: 700;
+ }
+
+ nav .nav-left h2 span {
+     color: #FF42A5;
+ }
+
+ nav ul {
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+ }
+
+ nav ul li {
+     margin-left: 20px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: #3C354F;
+     text-align: center;
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+ nav ul li a:hover {
+     color: #FF42A5;
+ }
+
+ nav ul li i {
+     font-size: 18px;
+     margin-left: 15px;
+ }
+
+ nav ul li .fa-youtube {
+     color: hsla(4, 93%, 51%, 1);
+ }
+
+ nav ul li .fa-tiktok {
+     color: hsla(0, 0%, 0%, 1);
+ }
+
+ nav ul li .follow {
+     border-radius: 8px;
+     background: rgba(11, 2, 35, 0.10);
+     padding: 10px 20px;
+ }
+
+ /* Navbar Style Ends Here */
+
+ /* Hero Section Style Goes Here */
+ .hero {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     gap: 100px;
+ }
+
+ .hero .hero-left {
+     width: 50%;
+ }
+
+ .hero .hero-left h2 {
+     color: #0B0223;
+     font-size: 48px;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin-bottom: 0px;
+ }
+
+ .hero .hero-left h1 {
+     margin-top: 0px;
+     font-size: 95px;
+     font-weight: 800;
+     text-transform: uppercase;
+     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-bottom: 0px;
+ }
+
+ .hero .hero-left p {
+     color: #534C64;
+     font-size: 20px;
+     font-weight: 500;
+     text-transform: lowercase;
+ }
+
+ .hero .hero-left i {
+     font-size: 20px;
+     margin-right: 15px;
+     color: #FF42A5;
+ }
+
+ .hero .hero-left .btn {
+     border-radius: 50px;
+     padding: 15px 30px;
+     color: #FFF;
+     font-size: 18px;
+     font-weight: 500;
+     text-transform: uppercase;
+     text-decoration: none;
+     margin-top: 30px;
+     display: inline-block;
+ }
+
+ .hero .hero-left .btn1 {
+     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+ }
+
+ .hero .hero-left .btn1:hover {
+     background: white;
+     color: #FF42A5;
+     border: 1px solid #FF42A5;
+ }
+
+ .hero .hero-left .btn2 {
+     background: #4EC5F7;
+     margin-left: 10px;
+ }
+
+ .hero .hero-left .btn2:hover {
+     background: white;
+     color: #4EC5F7;
+     border: 1px solid #4EC5F7;
+ }
+
+ .hero .hero-right {
+     /* width: 50%; */
+     background: #FFF;
+ }
+
+ .hero .hero-right img {
+     width: 100%;
+ }
+
+ /* Hero Section Style Ends Here */
+
+ /* Responsive Designs...  */
+ /* for mobile devices - max width 576px */
+ @media screen and (max-width: 576px) {
+
+     /* Responsive Navbar Style Goes Here */
+     nav {
+         padding: 0px 20px;
+         flex-direction: column;
+         box-shadow: none;
+     }
+
+     nav ul {
+         flex-direction: column;
+     }
+
+     nav ul li {
+         margin-left: 0px;
+         margin-bottom: 50px;
+     }
+
+     nav ul li:last-child {
+         margin-bottom: 0px;
+     }
+
+     nav .nav-left {
+         margin-bottom: 50px;
+     }
+
+     nav ul li .follow {
+         margin-left: -65px;
+     }
+
+     /* Responsive Hero Section Style Goes Here */
+     .hero {
+         flex-direction: column-reverse;
+         gap: 50px;
+     }
+
+     .hero .hero-left {
+         width: 100%;
+         padding: 0px 20px;
+         background-color: #FDF6FB;
+         border-radius: 20px;
+     }
+
+     .hero .hero-left h2 {
+         font-size: 30px;
+     }
+
+     .hero .hero-left h1 {
+         font-size: 60px;
+     }
+
+     .hero .hero-left p {
+         font-size: 16px;
+     }
+
+     .hero .hero-left .btn {
+         font-size: 16px;
+         padding: 10px 20px;
+     }
+
+ }
+
+ /* for mediym devices - max width 768px */
+ @media screen and (min-width: 577px) and (max-width: 768px) {
+
+     /* Responsive Navbar Style Goes Here */
+     nav {
+         padding: 0px 20px;
+         flex-direction: column;
+     }
+
+     nav ul {
+         flex-direction: column;
+     }
+
+     nav ul li {
+         margin-left: 0px;
+         margin-bottom: 50px;
+     }
+
+     nav ul li:last-child {
+         margin-bottom: 0px;
+     }
+
+     nav .nav-left {
+         margin-bottom: 50px;
+     }
+
+     .menu {
+         margin-bottom: 50px;
+     }
+
+     nav ul li .follow {
+         margin-left: -65px;
+     }
+
+     /* Responsive Hero Section Style Goes Here */
+     .hero {
+         flex-direction: column-reverse;
+         gap: 50px;
+     }
+
+     .hero .hero-left {
+         width: 100%;
+         padding: 0px 20px;
+         background-color: #FDF6FB;
+         border-radius: 20px;
+     }
+
+ }
+
+ /* for large devices - max width 992px */
+ @media screen and (min-width: 769px) and (max-width: 992px) {
+
+     /* Responsive Navbar Style Goes Here */
+     nav {
+         padding: 0px 20px;
+         flex-direction: column;
+     }
+
+     nav ul {
+         flex-direction: column;
+     }
+
+     nav ul li {
+         margin-left: 0px;
+         margin-bottom: 50px;
+     }
+
+     nav ul li:last-child {
+         margin-bottom: 0px;
+     }
+
+     nav .nav-left {
+         margin-bottom: 50px;
+     }
+
+     .menu {
+         margin-bottom: 50px;
+     }
+
+     nav ul li .follow {
+         margin-left: -65px;
+     }
+
+     /* Responsive Hero Section Style Goes Here */
+     .hero {
+         flex-direction: column-reverse;
+         gap: 50px;
+     }
+
+     .hero .hero-left {
+         width: 100%;
+         padding: 0px 20px;
+         background-color: #FDF6FB;
+         border-radius: 20px;
+         margin: 0 auto;
+         text-align: center;
+     }
+
+ }
